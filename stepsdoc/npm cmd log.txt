@@ -1,0 +1,577 @@
+Microsoft Windows [Version 10.0.16299.98]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\Pritam>npm install -g cordova
+C:\Users\Pritam\AppData\Roaming\npm\cordova -> C:\Users\Pritam\AppData\Roaming\npm\node_modules\cordova\bin\cordova
++ cordova@8.0.0
+added 413 packages in 159.399s
+
+C:\Users\Pritam>>cordova --v
+9.0.0 (cordova-lib@9.0.1)
+
+E:\Code\Java\cordova>cordova create MyApp
+? May Cordova anonymously report usage statistics to improve the tool over time? Yes
+
+Thanks for opting into telemetry to help us improve cordova.
+Creating a new cordova project.
+
+E:\Code\Java\cordova>cd MyApp
+
+E:\Code\Java\cordova\MyApp>cordova platform add browser
+Using cordova-fetch for cordova-browser@~5.0.1
+Adding browser project...
+Creating Cordova project for cordova-browser:
+        Path: E:\Code\Java\cordova\MyApp\platforms\browser
+        Name: HelloCordova
+Discovered plugin "cordova-plugin-whitelist" in config.xml. Adding it to the project
+Installing "cordova-plugin-whitelist" for browser
+Adding cordova-plugin-whitelist to package.json
+Saved plugin info for "cordova-plugin-whitelist" to config.xml
+--save flag or autosave detected
+Saving browser@~5.0.3 into config.xml file ...
+
+E:\Code\Java\cordova\MyApp>
+
+E:\Code\Java\cordova\MyApp>cordova run browser
+startPage = index.html
+Static file server running @ http://localhost:8000/index.html
+CTRL + C to shut down
+200 /index.html (gzip)
+200 /css/index.css (gzip)
+200 /js/index.js (gzip)
+200 /cordova.js (gzip)
+200 /img/logo.png
+200 /cordova_plugins.js
+200 /favicon.ico (gzip)
+304 /index.html
+304 /css/index.css
+^CTerminate batch job (Y/N)?
+^C
+E:\Code\Java\cordova\MyApp>
+
+E:\Code\Java\cordova\MyApp>cordova platform ls
+Installed platforms:
+  android 7.0.0
+  browser 5.0.3
+  ios 4.5.4
+Available platforms:
+  electron ^1.0.0
+  osx ^5.0.0
+  windows ^7.0.0
+  
+E:\Code\Java\cordova\MyApp>cordova requirements
+Android Studio project detected
+
+Requirements check results for android:
+Java JDK: installed 1.8.0
+Android SDK: installed true
+Android target: not installed
+No android targets (SDKs) installed!
+Gradle: installed E:\Software\AndroidStudio\gradle-5.6.2\bin\gradle
+
+Requirements check results for browser:
+
+Requirements check results for ios:
+Apple macOS: not installed
+Cordova tooling for iOS requires Apple macOS
+Some of requirements check failed
+
+
+E:\Code\Java\cordova\MyApp>cordova platform add android
+Using cordova-fetch for cordova-android@~7.0.0
+Adding android project...
+Creating Cordova project for the Android platform:
+        Path: platforms\android
+        Package: io.cordova.hellocordova
+        Name: HelloCordova
+        Activity: MainActivity
+        Android target: android-26
+Subproject Path: CordovaLib
+Subproject Path: app
+Android project created with cordova-android@7.0.0
+Android Studio project detected
+Android Studio project detected
+Installing "cordova-plugin-whitelist" for android
+
+               This plugin is only applicable for versions of cordova-android greater than 4.0. If you have a previous platform version, you do *not* need this plugin since the whitelist will be built in.
+
+--save flag or autosave detected
+Saving android@~7.0.0 into config.xml file ...
+
+E:\Code\Java\cordova\MyApp>cordova platform add ios
+Using cordova-fetch for cordova-ios@~4.5.4
+Adding ios project...
+Creating Cordova project for the iOS platform:
+        Path: platforms\ios
+        Package: io.cordova.hellocordova
+        Name: HelloCordova
+iOS project created with cordova-ios@4.5.4
+Installing "cordova-plugin-whitelist" for ios
+--save flag or autosave detected
+Saving ios@~4.5.4 into config.xml file ...
+
+
+E:\Code\Java\cordova\MyApp>cordova build
+Android Studio project detected
+ANDROID_HOME=E:\Software\AndroidStudio\SDK
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211
+studio
+Could not find an installed version of Gradle either in Android Studio,
+or on your system to install the gradle wrapper. Please include gradle
+in your path, or install Android Studio
+
+E:\Code\Java\cordova\MyApp>path
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Dart\dart-sdk\bin;F:\MATLABR2014a\runtime\win64;F:\MATLABR2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\runtime\win64;F:\MATLAB\MATLAB Production Server\R2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\polyspace\bin;F:\MATLABR2014a\polyspace\bin;C:\Program Files (x86)\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\AdoptOpenJDK\jdk8u192-b12\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\android-sdk\tools;C:\Android\android-sdk\platform-tools;C:\Android\android-sdk\tools\bin;E:\Software\php;C:\composer;C:\Users\Pritam\AppData\Local\Microsoft\WindowsApps;C:\Users\Pritam\AppData\Local\GitHubDesktop\bin;C:\Program Files\Heroku\bin;C:\Users\Pritam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Pritam\AppData\Roaming\npm;E:\Software\AndroidStudio\flutter\bin;E:\Software\AndroidStudio\flutter\bin\cache\dart-sdk\bin;C:\Users\Pritam\AppData\Roaming\Pub\Cache\bin;E:\Software\apache-maven-3.6.1\bin;C:\Users\Pritam\AppData\Roaming\Composer\vendor\bin
+
+E:\Code\Java\cordova\MyApp>set PATH=%PATH%;E:\Software\AndroidStudio\gradle-5.6.2\bin;
+
+E:\Code\Java\cordova\MyApp>path
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Dart\dart-sdk\bin;F:\MATLABR2014a\runtime\win64;F:\MATLABR2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\runtime\win64;F:\MATLAB\MATLAB Production Server\R2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\polyspace\bin;F:\MATLABR2014a\polyspace\bin;C:\Program Files (x86)\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\AdoptOpenJDK\jdk8u192-b12\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\android-sdk\tools;C:\Android\android-sdk\platform-tools;C:\Android\android-sdk\tools\bin;E:\Software\php;C:\composer;C:\Users\Pritam\AppData\Local\Microsoft\WindowsApps;C:\Users\Pritam\AppData\Local\GitHubDesktop\bin;C:\Program Files\Heroku\bin;C:\Users\Pritam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Pritam\AppData\Roaming\npm;E:\Software\AndroidStudio\flutter\bin;E:\Software\AndroidStudio\flutter\bin\cache\dart-sdk\bin;C:\Users\Pritam\AppData\Roaming\Pub\Cache\bin;E:\Software\apache-maven-3.6.1\bin;C:\Users\Pritam\AppData\Roaming\Composer\vendor\bin;E:\Software\AndroidStudio\gradle-5.6.2\bin;
+
+
+E:\Code\Java\cordova\MyApp>cordova run android
+cordova run android
+Android Studio project detected
+ANDROID_HOME=E:\Software\AndroidStudio\SDK
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211
+studio
+Subproject Path: CordovaLib
+Subproject Path: app
+publishNonDefault is deprecated and has no effect anymore. All variants are now published.
+Observed package id 'platforms;android-28' in inconsistent location 'E:\Software\AndroidStudio\SDK\platforms\android-9' (Expected 'E:\Software\AndroidStudio\SDK\platforms\android-28')
+Already observed package id 'platforms;android-28' in 'E:\Software\AndroidStudio\SDK\platforms\android-28'. Skipping duplicate at 'E:\Software\AndroidStudio\SDK\platforms\android-9'
+The Task.leftShift(Closure) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use Task.doLast(Action) instead.
+        at build_efpupvjoovaj50ejsos8e0q5o.run(E:\Code\Java\cordova\MyApp\platforms\android\app\build.gradle:143)
+:CordovaLib:preBuild UP-TO-DATE
+:CordovaLib:preDebugBuild UP-TO-DATE
+:CordovaLib:compileDebugAidl UP-TO-DATE
+:CordovaLib:compileDebugRenderscript UP-TO-DATE
+:CordovaLib:checkDebugManifest UP-TO-DATE
+:CordovaLib:generateDebugBuildConfig UP-TO-DATE
+:CordovaLib:prepareLintJar UP-TO-DATE
+:CordovaLib:generateDebugResValues UP-TO-DATE
+:CordovaLib:generateDebugResources UP-TO-DATE
+:CordovaLib:packageDebugResources UP-TO-DATE
+:CordovaLib:platformAttrExtractor UP-TO-DATE
+:CordovaLib:processDebugManifest UP-TO-DATE
+:CordovaLib:processDebugResources UP-TO-DATE
+:CordovaLib:generateDebugSources UP-TO-DATE
+:CordovaLib:javaPreCompileDebug UP-TO-DATE
+:CordovaLib:compileDebugJavaWithJavac UP-TO-DATE
+:CordovaLib:processDebugJavaRes NO-SOURCE
+:CordovaLib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugAidl UP-TO-DATE
+:CordovaLib:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:checkDebugManifest UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:prepareLintJar UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:createDebugCompatibleScreenManifests UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:splitsDiscoveryTaskDebug UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:javaPreCompileDebug UP-TO-DATE
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugSources UP-TO-DATE
+:CordovaLib:mergeDebugShaders UP-TO-DATE
+:CordovaLib:compileDebugShaders UP-TO-DATE
+:CordovaLib:generateDebugAssets UP-TO-DATE
+:CordovaLib:mergeDebugAssets UP-TO-DATE
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:extractTryWithResourcesSupportJarDebug UP-TO-DATE
+:app:transformClassesWithStackFramesFixerForDebug UP-TO-DATE
+:app:transformClassesWithDesugarForDebug UP-TO-DATE
+:app:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:app:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:CordovaLib:compileDebugNdk NO-SOURCE
+:CordovaLib:mergeDebugJniLibFolders UP-TO-DATE
+:CordovaLib:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:CordovaLib:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:app:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:app:validateSigningDebug
+:app:packageDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:cdvBuildDebug UP-TO-DATE
+
+BUILD SUCCESSFUL in 15s
+47 actionable tasks: 1 executed, 46 up-to-date
+Built the following apk(s):
+        E:\Code\Java\cordova\MyApp\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+ANDROID_HOME=E:\Software\AndroidStudio\SDK
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211
+No target specified and no devices found, deploying to emulator
+none
+Skipping build...
+Built the following apk(s):
+        E:\Code\Java\cordova\MyApp\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+Using apk: E:\Code\Java\cordova\MyApp\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+Package name: io.cordova.hellocordova
+INSTALL SUCCESS
+LAUNCH SUCCESS
+
+
+E:\Code\Java\cordova\MyApp>cordova build
+Android Studio project detected
+ANDROID_HOME=E:\Software\AndroidStudio\SDK
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211
+studio
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+BUILD SUCCESSFUL in 55s
+1 actionable task: 1 executed
+Subproject Path: CordovaLib
+Subproject Path: app
+Starting a Gradle Daemon (subsequent builds will be faster)
+Download https://maven.google.com/com/android/tools/build/gradle/3.0.0/gradle-3.0.0.pom
+Download https://maven.google.com/com/android/tools/build/gradle-core/3.0.0/gradle-core-3.0.0.pom
+Download https://maven.google.com/com/android/tools/external/org-jetbrains/uast/26.0.0/uast-26.0.0.pom
+Download https://maven.google.com/com/android/tools/build/builder/3.0.0/builder-3.0.0.pom
+Download https://maven.google.com/com/android/tools/build/gradle-api/3.0.0/gradle-api-3.0.0.pom
+Download https://maven.google.com/com/android/tools/lint/lint/26.0.0/lint-26.0.0.pom
+Download https://maven.google.com/com/android/databinding/compilerCommon/3.0.0/compilerCommon-3.0.0.pom
+Download https://maven.google.com/com/android/tools/sdk-common/26.0.0/sdk-common-26.0.0.pom
+Download https://maven.google.com/com/android/tools/build/builder-model/3.0.0/builder-model-3.0.0.pom
+Download https://maven.google.com/com/android/tools/build/builder-test-api/3.0.0/builder-test-api-3.0.0.pom
+Download https://maven.google.com/com/android/tools/sdklib/26.0.0/sdklib-26.0.0.pom
+Download https://maven.google.com/com/android/tools/ddms/ddmlib/26.0.0/ddmlib-26.0.0.pom
+Download https://maven.google.com/com/android/tools/analytics-library/protos/26.0.0/protos-26.0.0.pom
+Download https://maven.google.com/com/android/tools/build/manifest-merger/26.0.0/manifest-merger-26.0.0.pom
+Download https://maven.google.com/com/android/tools/analytics-library/shared/26.0.0/shared-26.0.0.pom
+Download https://maven.google.com/com/android/tools/common/26.0.0/common-26.0.0.pom
+Download https://maven.google.com/com/android/tools/analytics-library/tracker/26.0.0/tracker-26.0.0.pom
+Download https://maven.google.com/com/android/tools/build/apksig/3.0.0/apksig-3.0.0.pom
+Download https://maven.google.com/com/android/tools/lint/lint-checks/26.0.0/lint-checks-26.0.0.pom
+Download https://maven.google.com/com/android/databinding/baseLibrary/3.0.0/baseLibrary-3.0.0.pom
+Download https://maven.google.com/com/android/tools/repository/26.0.0/repository-26.0.0.pom
+Download https://maven.google.com/com/android/tools/dvlib/26.0.0/dvlib-26.0.0.pom
+Download https://maven.google.com/com/android/tools/layoutlib/layoutlib-api/26.0.0/layoutlib-api-26.0.0.pom
+Download https://maven.google.com/com/android/tools/lint/lint-api/26.0.0/lint-api-26.0.0.pom
+Download https://maven.google.com/com/android/tools/external/com-intellij/intellij-core/26.0.0/intellij-core-26.0.0.pom
+Download https://maven.google.com/com/android/tools/annotations/26.0.0/annotations-26.0.0.pom
+Download https://maven.google.com/com/android/tools/build/gradle/3.0.0/gradle-3.0.0.jar
+Download https://maven.google.com/com/android/tools/build/gradle-core/3.0.0/gradle-core-3.0.0.jar
+Download https://maven.google.com/com/android/tools/lint/lint/26.0.0/lint-26.0.0.jar
+Download https://maven.google.com/com/android/tools/build/builder/3.0.0/builder-3.0.0.jar
+Download https://maven.google.com/com/android/tools/lint/lint-checks/26.0.0/lint-checks-26.0.0.jar
+Download https://maven.google.com/com/android/tools/lint/lint-api/26.0.0/lint-api-26.0.0.jar
+Download https://maven.google.com/com/android/tools/external/org-jetbrains/uast/26.0.0/uast-26.0.0.jar
+Download https://maven.google.com/com/android/tools/build/gradle-api/3.0.0/gradle-api-3.0.0.jar
+Download https://maven.google.com/com/android/databinding/compilerCommon/3.0.0/compilerCommon-3.0.0.jar
+Download https://maven.google.com/com/android/tools/build/manifest-merger/26.0.0/manifest-merger-26.0.0.jar
+Download https://maven.google.com/com/android/tools/sdk-common/26.0.0/sdk-common-26.0.0.jar
+Download https://maven.google.com/com/android/tools/sdklib/26.0.0/sdklib-26.0.0.jar
+Download https://maven.google.com/com/android/tools/repository/26.0.0/repository-26.0.0.jar
+Download https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib/1.1.3-2/kotlin-stdlib-1.1.3-2.jar
+Download https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-reflect/1.1.3-2/kotlin-reflect-1.1.3-2.jar
+Download https://jcenter.bintray.com/org/jacoco/org.jacoco.report/0.7.4.201502262128/org.jacoco.report-0.7.4.201502262128.jar
+Download https://jcenter.bintray.com/org/jacoco/org.jacoco.core/0.7.4.201502262128/org.jacoco.core-0.7.4.201502262128.jar
+Download https://maven.google.com/com/android/tools/analytics-library/tracker/26.0.0/tracker-26.0.0.jar
+Download https://maven.google.com/com/android/tools/analytics-library/protos/26.0.0/protos-26.0.0.jar
+Download https://jcenter.bintray.com/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.jar
+Download https://maven.google.com/com/android/tools/analytics-library/shared/26.0.0/shared-26.0.0.jar
+Download https://maven.google.com/com/android/tools/build/builder-model/3.0.0/builder-model-3.0.0.jar
+Download https://maven.google.com/com/android/tools/build/builder-test-api/3.0.0/builder-test-api-3.0.0.jar
+Download https://maven.google.com/com/android/tools/ddms/ddmlib/26.0.0/ddmlib-26.0.0.jar
+Download https://maven.google.com/com/android/tools/layoutlib/layoutlib-api/26.0.0/layoutlib-api-26.0.0.jar
+Download https://maven.google.com/com/android/tools/build/apksig/3.0.0/apksig-3.0.0.jar
+Download https://maven.google.com/com/android/tools/common/26.0.0/common-26.0.0.jar
+Download https://maven.google.com/com/android/tools/dvlib/26.0.0/dvlib-26.0.0.jar
+Download https://jcenter.bintray.com/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar
+Download https://maven.google.com/com/android/databinding/baseLibrary/3.0.0/baseLibrary-3.0.0.jar
+Download https://jcenter.bintray.com/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar
+Download https://maven.google.com/com/android/tools/annotations/26.0.0/annotations-26.0.0.jar
+Download https://jcenter.bintray.com/com/google/code/gson/gson/2.3/gson-2.3.jar
+Download https://jcenter.bintray.com/com/intellij/annotations/12.0/annotations-12.0.jar
+Download https://maven.google.com/com/android/tools/external/com-intellij/intellij-core/26.0.0/intellij-core-26.0.0.jar
+Download https://jcenter.bintray.com/com/github/dcendents/android-maven-gradle-plugin/1.5/android-maven-gradle-plugin-1.5.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpclient/4.2.1/httpclient-4.2.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-client/4.2.1/httpcomponents-client-4.2.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/project/6/project-6.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcore/4.2.1/httpcore-4.2.1.pom
+Download https://jcenter.bintray.com/org/apache/httpcomponents/httpcomponents-core/4.2.1/httpcomponents-core-4.2.1.pom
+Download https://jcenter.bintray.com/com/github/dcendents/android-maven-gradle-plugin/1.5/android-maven-gradle-plugin-1.5.jar
+publishNonDefault is deprecated and has no effect anymore. All variants are now published.
+Observed package id 'platforms;android-28' in inconsistent location 'E:\Software\AndroidStudio\SDK\platforms\android-9' (Expected 'E:\Software\AndroidStudio\SDK\platforms\android-28')
+Already observed package id 'platforms;android-28' in 'E:\Software\AndroidStudio\SDK\platforms\android-28'. Skipping duplicate at 'E:\Software\AndroidStudio\SDK\platforms\android-9'
+Observed package id 'platforms;android-28' in inconsistent location 'E:\Software\AndroidStudio\SDK\platforms\android-9' (Expected 'E:\Software\AndroidStudio\SDK\platforms\android-28')
+Already observed package id 'platforms;android-28' in 'E:\Software\AndroidStudio\SDK\platforms\android-28'. Skipping duplicate at 'E:\Software\AndroidStudio\SDK\platforms\android-9'
+Observed package id 'platforms;android-28' in inconsistent location 'E:\Software\AndroidStudio\SDK\platforms\android-9' (Expected 'E:\Software\AndroidStudio\SDK\platforms\android-28')
+Already observed package id 'platforms;android-28' in 'E:\Software\AndroidStudio\SDK\platforms\android-28'. Skipping duplicate at 'E:\Software\AndroidStudio\SDK\platforms\android-9'
+Checking the license for package Android SDK Platform 26 in E:\Software\AndroidStudio\SDK\licenses
+License for package Android SDK Platform 26 accepted.
+Preparing "Install Android SDK Platform 26 (revision: 2)".
+"Install Android SDK Platform 26 (revision: 2)" ready.
+Installing Android SDK Platform 26 in E:\Software\AndroidStudio\SDK\platforms\android-26
+"Install Android SDK Platform 26 (revision: 2)" complete.
+"Install Android SDK Platform 26 (revision: 2)" finished.
+Observed package id 'platforms;android-28' in inconsistent location 'E:\Software\AndroidStudio\SDK\platforms\android-9' (Expected 'E:\Software\AndroidStudio\SDK\platforms\android-28')
+Already observed package id 'platforms;android-28' in 'E:\Software\AndroidStudio\SDK\platforms\android-28'. Skipping duplicate at 'E:\Software\AndroidStudio\SDK\platforms\android-9'
+Download https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.1.3-2/kotlin-stdlib-1.1.3-2.pom
+Download https://repo1.maven.org/maven2/net/sf/proguard/proguard-gradle/5.3.3/proguard-gradle-5.3.3.pom
+Download https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/0.7.4.201502262128/org.jacoco.report-0.7.4.201502262128.pom
+Download https://repo1.maven.org/maven2/org/jacoco/org.jacoco.core/0.7.4.201502262128/org.jacoco.core-0.7.4.201502262128.pom
+Download https://repo1.maven.org/maven2/org/jacoco/org.jacoco.build/0.7.4.201502262128/org.jacoco.build-0.7.4.201502262128.pom
+Download https://repo1.maven.org/maven2/net/sf/proguard/proguard-parent/5.3.3/proguard-parent-5.3.3.pom
+Download https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.pom
+Download https://repo1.maven.org/maven2/com/google/protobuf/protobuf-parent/3.0.0/protobuf-parent-3.0.0.pom
+Download https://repo1.maven.org/maven2/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.pom
+Download https://repo1.maven.org/maven2/net/sf/proguard/proguard-base/5.3.3/proguard-base-5.3.3.pom
+Download https://repo1.maven.org/maven2/com/google/code/gson/gson/2.3/gson-2.3.pom
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.pom
+Download https://repo1.maven.org/maven2/com/google/errorprone/error_prone_parent/2.0.18/error_prone_parent-2.0.18.pom
+Download https://repo1.maven.org/maven2/com/intellij/annotations/12.0/annotations-12.0.pom
+Download https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-reflect/1.1.3-2/kotlin-reflect-1.1.3-2.pom
+Download https://repo1.maven.org/maven2/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.pom
+The Task.leftShift(Closure) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use Task.doLast(Action) instead.
+        at build_efpupvjoovaj50ejsos8e0q5o.run(E:\Code\Java\cordova\MyApp\platforms\android\app\build.gradle:143)
+:CordovaLib:preBuild UP-TO-DATE
+:CordovaLib:preDebugBuild UP-TO-DATE
+:CordovaLib:compileDebugAidl
+:CordovaLib:compileDebugRenderscript
+:CordovaLib:checkDebugManifest
+:CordovaLib:generateDebugBuildConfig
+:CordovaLib:prepareLintJar
+:CordovaLib:generateDebugResValues
+:CordovaLib:generateDebugResources
+:CordovaLib:packageDebugResources
+:CordovaLib:platformAttrExtractor
+:CordovaLib:processDebugManifest
+:CordovaLib:javaPreCompileDebug
+:CordovaLib:processDebugJavaRes NO-SOURCE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild
+:app:compileDebugAidl
+:CordovaLib:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:app:compileDebugNdk NO-SOURCE
+:CordovaLib:mergeDebugShaders
+:CordovaLib:compileDebugShaders
+:CordovaLib:generateDebugAssets
+:CordovaLib:mergeDebugAssets
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:extractTryWithResourcesSupportJarDebug
+:CordovaLib:compileDebugNdk NO-SOURCE
+:CordovaLib:mergeDebugJniLibFolders
+:CordovaLib:transformNativeLibsWithMergeJniLibsForDebug
+:CordovaLib:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:mergeDebugJniLibFolders
+:app:processDebugJavaRes NO-SOURCE
+:app:validateSigningDebug
+:CordovaLib:processDebugResources
+:CordovaLib:generateDebugSources
+:CordovaLib:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:CordovaLib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:processDebugResources
+:app:generateDebugSources
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugSources
+:app:transformClassesWithStackFramesFixerForDebug
+:app:transformClassesWithDesugarForDebug
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformResourcesWithMergeJavaResForDebug
+:app:packageDebug
+:app:assembleDebug
+:app:cdvBuildDebug
+
+BUILD SUCCESSFUL in 13m 18s
+47 actionable tasks: 47 executed
+Built the following apk(s):
+        E:\Code\Java\cordova\MyApp\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+CordovaError: Promise rejected with non-error: 'xcodebuild was not found. Please install version 7.0.0 or greater from App Store'
+    at cli.catch.err (C:\Users\Pritam\AppData\Roaming\npm\node_modules\cordova\bin\cordova:29:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+E:\Code\Java\cordova\MyApp>cordova -d emulate android
+No scripts found for hook "before_emulate".
+No scripts found for hook "before_prepare".
+Checking config.xml and package.json for saved platforms that haven't been added to the project
+Config.xml and package.json platforms are the same. No pkg.json modification.
+Package.json and config.xml platforms are different. Updating config.xml with most current list of platforms.
+PlatformApi successfully found for platform android
+Android Studio project detected
+Checking for saved plugins that haven't been added to the project
+Checking for any plugins added to the project that have not been installed in android platform
+No differences found between plugins added to project and installed in android platform. Continuing...
+Generating platform-specific config.xml from defaults for android at E:\Code\Java\cordova\MyApp\platforms\android\app\src\main\res\xml\config.xml
+Merging project's config.xml into platform-specific android config.xml
+Merging and updating files from [www, platforms\android\platform_www] to platforms\android\app\src\main\assets\www
+Wrote out android application name "HelloCordova" to E:\Code\Java\cordova\MyApp\platforms\android\app\src\main\res\values\strings.xml
+android-versionCode not found in config.xml. Generating a code based on version in config.xml (1.0.0): 10000
+Wrote out Android package name "io.cordova.hellocordova" to E:\Code\Java\cordova\MyApp\platforms\android\app\src\main\java\io\cordova\hellocordova\MainActivity.java
+This app does not have launcher icons defined
+This app does not have splash screens defined
+This app does not have additional resource files defined
+Prepared android project successfully
+No scripts found for hook "after_prepare".
+ANDROID_HOME=E:\Software\AndroidStudio\SDK
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211
+studio
+Subproject Path: CordovaLib
+Subproject Path: app
+Running command: cmd "/s /c "E:\Code\Java\cordova\MyApp\platforms\android\gradlew.bat cdvBuildDebug -b E:\Code\Java\cordova\MyApp\platforms\android\build.gradle -Dorg.gradle.daemon=true -Dorg.gradle.jvmargs=-Xmx2048m -Pandroid.useDeprecatedNdk=true""
+publishNonDefault is deprecated and has no effect anymore. All variants are now published.
+The Task.leftShift(Closure) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use Task.doLast(Action) instead.
+        at build_efpupvjoovaj50ejsos8e0q5o.run(E:\Code\Java\cordova\MyApp\platforms\android\app\build.gradle:143)
+:CordovaLib:preBuild UP-TO-DATE
+:CordovaLib:preDebugBuild UP-TO-DATE
+:CordovaLib:compileDebugAidl UP-TO-DATE
+:CordovaLib:compileDebugRenderscript UP-TO-DATE
+:CordovaLib:checkDebugManifest UP-TO-DATE
+:CordovaLib:generateDebugBuildConfig UP-TO-DATE
+:CordovaLib:prepareLintJar UP-TO-DATE
+:CordovaLib:generateDebugResValues UP-TO-DATE
+:CordovaLib:generateDebugResources UP-TO-DATE
+:CordovaLib:packageDebugResources UP-TO-DATE
+:CordovaLib:platformAttrExtractor UP-TO-DATE
+:CordovaLib:processDebugManifest UP-TO-DATE
+:CordovaLib:processDebugResources UP-TO-DATE
+:CordovaLib:generateDebugSources UP-TO-DATE
+:CordovaLib:javaPreCompileDebug UP-TO-DATE
+:CordovaLib:compileDebugJavaWithJavac UP-TO-DATE
+:CordovaLib:processDebugJavaRes NO-SOURCE
+:CordovaLib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugAidl UP-TO-DATE
+:CordovaLib:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:checkDebugManifest UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:prepareLintJar UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:createDebugCompatibleScreenManifests UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:splitsDiscoveryTaskDebug UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:javaPreCompileDebug UP-TO-DATE
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugSources UP-TO-DATE
+:CordovaLib:mergeDebugShaders UP-TO-DATE
+:CordovaLib:compileDebugShaders UP-TO-DATE
+:CordovaLib:generateDebugAssets UP-TO-DATE
+:CordovaLib:mergeDebugAssets UP-TO-DATE
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:extractTryWithResourcesSupportJarDebug UP-TO-DATE
+:app:transformClassesWithStackFramesFixerForDebug UP-TO-DATE
+:app:transformClassesWithDesugarForDebug UP-TO-DATE
+:app:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:app:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:CordovaLib:compileDebugNdk NO-SOURCE
+:CordovaLib:mergeDebugJniLibFolders UP-TO-DATE
+:CordovaLib:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:CordovaLib:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:app:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:app:validateSigningDebug
+:app:packageDebug UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:cdvBuildDebug UP-TO-DATE
+
+BUILD SUCCESSFUL in 9s
+47 actionable tasks: 1 executed, 46 up-to-date
+Command finished with error code 0: cmd /s /c "E:\Code\Java\cordova\MyApp\platforms\android\gradlew.bat cdvBuildDebug -b E:\Code\Java\cordova\MyApp\platforms\android\build.gradle -Dorg.gradle.daemon=true -Dorg.gradle.jvmargs=-Xmx2048m -Pandroid.useDeprecatedNdk=true"
+Built the following apk(s):
+        E:\Code\Java\cordova\MyApp\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+No scripts found for hook "before_deploy".
+ANDROID_HOME=E:\Software\AndroidStudio\SDK
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_211
+Running command: C:\Android\android-sdk\platform-tools\adb.exe devices
+Command finished with error code 0: C:\Android\android-sdk\platform-tools\adb.exe devices
+Running command: C:\Android\android-sdk\platform-tools\adb.exe devices
+Command finished with error code 0: C:\Android\android-sdk\platform-tools\adb.exe devices
+Running adb shell command "cat /proc/cpuinfo" on target emulator-5554...
+Running command: C:\Android\android-sdk\platform-tools\adb.exe -s emulator-5554 shell cat /proc/cpuinfo
+Command finished with error code 0: C:\Android\android-sdk\platform-tools\adb.exe -s,emulator-5554,shell,cat,/proc/cpuinfo
+none
+Skipping build...
+Built the following apk(s):
+        E:\Code\Java\cordova\MyApp\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+Running adb shell command "ps" on target emulator-5554...
+Running command: C:\Android\android-sdk\platform-tools\adb.exe -s emulator-5554 shell ps
+Command finished with error code 0: C:\Android\android-sdk\platform-tools\adb.exe -s,emulator-5554,shell,ps
+Using apk: E:\Code\Java\cordova\MyApp\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+Package name: io.cordova.hellocordova
+Installing app on emulator...
+Installing apk E:\Code\Java\cordova\MyApp\platforms\android\app\build\outputs\apk\debug\app-debug.apk on emulator-5554...
+INSTALL SUCCESS
+Unlocking screen...
+Running adb shell command "input keyevent 82" on target emulator-5554...
+Running command: C:\Android\android-sdk\platform-tools\adb.exe -s emulator-5554 shell input keyevent 82
+Command finished with error code 0: C:\Android\android-sdk\platform-tools\adb.exe -s,emulator-5554,shell,input,keyevent,82
+Starting application "io.cordova.hellocordova/.MainActivity" on target emulator-5554...
+Running adb shell command "am start -W -a android.intent.action.MAIN -nio.cordova.hellocordova/.MainActivity" on target emulator-5554...
+Running command: C:\Android\android-sdk\platform-tools\adb.exe -s emulator-5554 shell am start -W -a android.intent.action.MAIN -nio.cordova.hellocordova/.MainActivity
+LAUNCH SUCCESS
+No scripts found for hook "after_emulate".
+Command finished with error code 0: C:\Android\android-sdk\platform-tools\adb.exe -s,emulator-5554,shell,am,start,-W,-a,android.intent.action.MAIN,-nio.cordova.hellocordova/.MainActivity
+
+E:\Code\Java\cordova\MyApp>E:\Code\Java\cordova\MyApp>cordova run --emulator
+
+^CTerminate batch job (Y/N)?
+^C
+E:\Code\Java\cordova\MyApp>cordova plugin ls
+cordova-plugin-whitelist 1.3.3 "Whitelist"
+
+E:\Code\Java\cordova\MyApp>cordova plugin add cordova-plugin-camera
+Installing "cordova-plugin-camera" for android
+Android Studio project detected
+Subproject Path: CordovaLib
+Subproject Path: app
+Installing "cordova-plugin-camera" for browser
+Installing "cordova-plugin-camera" for ios
+Adding cordova-plugin-camera to package.json
+
+E:\Code\Java\cordova\MyApp>cordova plugin ls
+cordova-plugin-camera 4.1.0 "Camera"
+cordova-plugin-whitelist 1.3.3 "Whitelist"
+
+E:\Code\Java\cordova\MyApp>
+
+
+
+
+
+
+
