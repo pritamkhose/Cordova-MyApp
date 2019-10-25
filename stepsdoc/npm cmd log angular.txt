@@ -1,0 +1,271 @@
+Microsoft Windows [Version 10.0.16299.98]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+E:\Code\Java\cordova>cordova create MyCRMPritam
+Creating a new cordova project.
+
+E:\Code\Java\cordova>cd MyCRMPritam
+
+E:\Code\Java\cordova\MyCRMPritam>cordova platform add browser
+Using cordova-fetch for cordova-browser@^6.0.0
+Adding browser project...
+Creating Cordova project for cordova-browser:
+        Path: E:\Code\Java\cordova\MyCRMPritam\platforms\browser
+        Name: HelloCordova
+Plugin 'cordova-plugin-whitelist' found in config.xml... Migrating it to package.json
+Discovered saved plugin "cordova-plugin-whitelist". Adding it to the project
+Installing "cordova-plugin-whitelist" for browser
+Adding cordova-plugin-whitelist to package.json
+
+E:\Code\Java\cordova\MyCRMPritam>cordova run browser
+startPage = index.html
+Static file server running @ http://localhost:8000/index.html
+CTRL + C to shut down
+200 /index.html (gzip)
+200 /js/index.js (gzip)
+200 /css/index.css (gzip)
+200 /cordova.js (gzip)
+200 /img/logo.png
+200 /cordova_plugins.js
+200 /favicon.ico (gzip)
+Terminate batch job (Y/N)? y
+
+E:\Code\Java\cordova\MyCRMPritam>cordova platform add android
+Using cordova-fetch for cordova-android@^8.0.0
+Adding android project...
+Creating Cordova project for the Android platform:
+        Path: platforms\android
+        Package: io.cordova.hellocordova
+        Name: HelloCordova
+        Activity: MainActivity
+        Android target: android-28
+Subproject Path: CordovaLib
+Subproject Path: app
+Android project created with cordova-android@8.1.0
+Installing "cordova-plugin-whitelist" for android
+
+E:\Code\Java\cordova\MyCRMPritam>cordova platform ls
+Installed platforms:
+  android 8.1.0
+  browser 6.0.0
+Available platforms:
+  electron ^1.0.0
+  ios ^5.0.0
+  osx ^5.0.0
+  windows ^7.0.0
+
+E:\Code\Java\cordova\MyCRMPritam>path
+PATH=C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Dart\dart-sdk\bin;F:\MATLABR2014a\runtime\win64;F:\MATLABR2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\runtime\win64;F:\MATLAB\MATLAB Production Server\R2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\polyspace\bin;F:\MATLABR2014a\polyspace\bin;C:\Program Files (x86)\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\AdoptOpenJDK\jdk8u192-b12\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\android-sdk\tools;C:\Android\android-sdk\platform-tools;C:\Android\android-sdk\tools\bin;E:\Software\php;C:\composer;C:\Users\Pritam\AppData\Local\Microsoft\WindowsApps;C:\Users\Pritam\AppData\Local\GitHubDesktop\bin;C:\Program Files\Heroku\bin;C:\Users\Pritam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Pritam\AppData\Roaming\npm;E:\Software\AndroidStudio\flutter\bin;E:\Software\AndroidStudio\flutter\bin\cache\dart-sdk\bin;C:\Users\Pritam\AppData\Roaming\Pub\Cache\bin;E:\Software\apache-maven-3.6.1\bin;C:\Users\Pritam\AppData\Roaming\Composer\vendor\bin;C:\Users\Pritam\AppData\Local\Programs\Python\Python37-32;
+
+E:\Code\Java\cordova\MyCRMPritam>path
+PATH=C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Dart\dart-sdk\bin;F:\MATLABR2014a\runtime\win64;F:\MATLABR2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\runtime\win64;F:\MATLAB\MATLAB Production Server\R2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\polyspace\bin;F:\MATLABR2014a\polyspace\bin;C:\Program Files (x86)\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\AdoptOpenJDK\jdk8u192-b12\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Android\android-sdk\tools;C:\Android\android-sdk\platform-tools;C:\Android\android-sdk\tools\bin;E:\Software\php;C:\composer;C:\Users\Pritam\AppData\Local\Microsoft\WindowsApps;C:\Users\Pritam\AppData\Local\GitHubDesktop\bin;C:\Program Files\Heroku\bin;C:\Users\Pritam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Pritam\AppData\Roaming\npm;E:\Software\AndroidStudio\flutter\bin;E:\Software\AndroidStudio\flutter\bin\cache\dart-sdk\bin;C:\Users\Pritam\AppData\Roaming\Pub\Cache\bin;E:\Software\apache-maven-3.6.1\bin;C:\Users\Pritam\AppData\Roaming\Composer\vendor\bin;C:\Users\Pritam\AppData\Local\Programs\Python\Python37-32;
+
+Microsoft Windows [Version 10.0.16299.98]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+E:\Code\Java\cordova\MyCRMPritam>cordova build android
+Checking Java JDK and Android SDK versions
+ANDROID_SDK_ROOT=E:\Software\AndroidStudio\SDK (recommended setting)
+ANDROID_HOME=E:\Software\AndroidStudio\SDK (DEPRECATED)
+Could not find an installed version of Gradle either in Android Studio,
+or on your system to install the gradle wrapper. Please include gradle
+in your path, or install Android Studio
+
+E:\Code\Java\cordova\MyCRMPritam>set PATH=%PATH%;E:\Software\AndroidStudio\gradle-5.6.2\bin;
+
+E:\Code\Java\cordova\MyCRMPritam>path
+PATH=C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Dart\dart-sdk\bin;F:\MATLABR2014a\runtime\win64;F:\MATLABR2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\runtime\win64;F:\MATLAB\MATLAB Production Server\R2014a\bin;F:\MATLAB\MATLAB Production Server\R2014a\polyspace\bin;F:\MATLABR2014a\polyspace\bin;C:\Program Files (x86)\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\AdoptOpenJDK\jdk8u192-b12\bin;C:\Program Files\Java\jdk1.8.0_211\bin;E:\Software\php;C:\composer;C:\Users\Pritam\AppData\Local\Microsoft\WindowsApps;C:\Users\Pritam\AppData\Local\GitHubDesktop\bin;C:\Program Files\Heroku\bin;C:\Users\Pritam\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Pritam\AppData\Roaming\npm;E:\Software\AndroidStudio\flutter\bin;E:\Software\AndroidStudio\flutter\bin\cache\dart-sdk\bin;C:\Users\Pritam\AppData\Roaming\Pub\Cache\bin;E:\Software\apache-maven-3.6.1\bin;C:\Users\Pritam\AppData\Roaming\Composer\vendor\bin;C:\Users\Pritam\AppData\Local\Programs\Python\Python37-32;;E:\Software\AndroidStudio\gradle-5.6.2\bin;
+
+E:\Code\Java\cordova\MyCRMPritam>cordova build android
+Checking Java JDK and Android SDK versions
+ANDROID_SDK_ROOT=E:\Software\AndroidStudio\SDK (recommended setting)
+ANDROID_HOME=E:\Software\AndroidStudio\SDK (DEPRECATED)
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+BUILD SUCCESSFUL in 41s
+1 actionable task: 1 executed
+Subproject Path: CordovaLib
+Subproject Path: app
+Downloading https://services.gradle.org/distributions/gradle-4.10.3-all.zip
+................................................................................................................
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Configure project :app
+Observed package id 'platforms;android-28' in inconsistent location 'E:\Software\AndroidStudio\SDK\platforms\android-9' (Expected 'E:\Software\AndroidStudio\SDK\platforms\android-28')
+Already observed package id 'platforms;android-28' in 'E:\Software\AndroidStudio\SDK\platforms\android-28'. Skipping duplicate at 'E:\Software\AndroidStudio\SDK\platforms\android-9'
+
+> Task :app:preBuild UP-TO-DATE
+> Task :CordovaLib:preBuild UP-TO-DATE
+> Task :CordovaLib:preDebugBuild UP-TO-DATE
+> Task :CordovaLib:checkDebugManifest
+> Task :CordovaLib:processDebugManifest
+> Task :app:preDebugBuild
+> Task :CordovaLib:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :CordovaLib:packageDebugRenderscript NO-SOURCE
+> Task :app:compileDebugRenderscript
+> Task :app:checkDebugManifest
+> Task :app:generateDebugBuildConfig
+> Task :app:prepareLintJar
+> Task :app:generateDebugSources
+> Task :CordovaLib:compileDebugRenderscript
+> Task :CordovaLib:generateDebugBuildConfig
+> Task :CordovaLib:generateDebugResValues
+> Task :CordovaLib:generateDebugResources
+> Task :CordovaLib:packageDebugResources
+> Task :CordovaLib:generateDebugRFile
+> Task :CordovaLib:prepareLintJar
+> Task :CordovaLib:generateDebugSources
+> Task :CordovaLib:javaPreCompileDebug
+> Task :CordovaLib:compileDebugJavaWithJavac
+> Task :CordovaLib:processDebugJavaRes NO-SOURCE
+> Task :CordovaLib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+> Task :app:javaPreCompileDebug
+> Task :app:mainApkListPersistenceDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:processDebugManifest
+> Task :app:processDebugResources
+> Task :app:compileDebugJavaWithJavac
+> Task :app:compileDebugNdk NO-SOURCE
+> Task :app:compileDebugSources
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :CordovaLib:mergeDebugShaders
+> Task :CordovaLib:compileDebugShaders
+> Task :CordovaLib:generateDebugAssets
+> Task :CordovaLib:packageDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:validateSigningDebug
+> Task :app:signingConfigWriterDebug
+> Task :app:transformClassesWithDexBuilderForDebug
+> Task :app:transformDexArchiveWithExternalLibsDexMergerForDebug
+> Task :app:transformDexArchiveWithDexMergerForDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :CordovaLib:compileDebugNdk NO-SOURCE
+> Task :CordovaLib:mergeDebugJniLibFolders
+> Task :CordovaLib:transformNativeLibsWithMergeJniLibsForDebug
+> Task :CordovaLib:transformNativeLibsWithIntermediateJniLibsForDebug
+> Task :app:transformNativeLibsWithMergeJniLibsForDebug
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:transformResourcesWithMergeJavaResForDebug
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:cdvBuildDebug
+
+BUILD SUCCESSFUL in 8m 12s
+42 actionable tasks: 42 executed
+Built the following apk(s):
+        E:\Code\Java\cordova\MyCRMPritam\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+
+
+E:\Code\Java\cordova\MyCRMPritam>cordova run android
+Checking Java JDK and Android SDK versions
+ANDROID_SDK_ROOT=E:\Software\AndroidStudio\SDK (recommended setting)
+ANDROID_HOME=E:\Software\AndroidStudio\SDK (DEPRECATED)
+Subproject Path: CordovaLib
+Subproject Path: app
+> Task :app:preBuild UP-TO-DATE
+> Task :CordovaLib:preBuild UP-TO-DATE
+> Task :CordovaLib:preDebugBuild UP-TO-DATE
+> Task :CordovaLib:checkDebugManifest UP-TO-DATE
+> Task :CordovaLib:processDebugManifest UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :CordovaLib:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :CordovaLib:packageDebugRenderscript NO-SOURCE
+> Task :app:compileDebugRenderscript UP-TO-DATE
+> Task :app:checkDebugManifest UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:prepareLintJar UP-TO-DATE
+> Task :app:generateDebugSources UP-TO-DATE
+> Task :CordovaLib:compileDebugRenderscript UP-TO-DATE
+> Task :CordovaLib:generateDebugBuildConfig UP-TO-DATE
+> Task :CordovaLib:generateDebugResValues UP-TO-DATE
+> Task :CordovaLib:generateDebugResources UP-TO-DATE
+> Task :CordovaLib:packageDebugResources UP-TO-DATE
+> Task :CordovaLib:generateDebugRFile UP-TO-DATE
+> Task :CordovaLib:prepareLintJar UP-TO-DATE
+> Task :CordovaLib:generateDebugSources UP-TO-DATE
+> Task :CordovaLib:javaPreCompileDebug UP-TO-DATE
+> Task :CordovaLib:compileDebugJavaWithJavac UP-TO-DATE
+> Task :CordovaLib:processDebugJavaRes NO-SOURCE
+> Task :CordovaLib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceDebug UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileDebugNdk NO-SOURCE
+> Task :app:compileDebugSources UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :CordovaLib:mergeDebugShaders UP-TO-DATE
+> Task :CordovaLib:compileDebugShaders UP-TO-DATE
+> Task :CordovaLib:generateDebugAssets UP-TO-DATE
+> Task :CordovaLib:packageDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:signingConfigWriterDebug UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForDebug UP-TO-DATE
+> Task :app:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+> Task :app:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :CordovaLib:compileDebugNdk NO-SOURCE
+> Task :CordovaLib:mergeDebugJniLibFolders UP-TO-DATE
+> Task :CordovaLib:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+> Task :CordovaLib:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+> Task :app:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+> Task :app:packageDebug
+> Task :app:assembleDebug
+> Task :app:cdvBuildDebug
+
+BUILD SUCCESSFUL in 2s
+42 actionable tasks: 2 executed, 40 up-to-date
+Built the following apk(s):
+        E:\Code\Java\cordova\MyCRMPritam\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+Checking Java JDK and Android SDK versions
+ANDROID_SDK_ROOT=E:\Software\AndroidStudio\SDK (recommended setting)
+ANDROID_HOME=E:\Software\AndroidStudio\SDK (DEPRECATED)
+No target specified, deploying to device '61aac19a'.
+Using apk: E:\Code\Java\cordova\MyCRMPritam\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+Package name: io.cordova.hellocordova
+Failed to execute shell command "input,keyevent,82"" on device: Error: adb: Command failed with exit code 137
+
+BUILD SUCCESSFUL in 26s
+42 actionable tasks: 2 executed, 40 up-to-date
+Built the following apk(s):
+        E:\Code\Java\cordova\MyCRMPritam\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+Checking Java JDK and Android SDK versions
+ANDROID_SDK_ROOT=E:\Software\AndroidStudio\SDK (recommended setting)
+ANDROID_HOME=E:\Software\AndroidStudio\SDK (DEPRECATED)
+No target specified, deploying to device '61aac19a'.
+Using apk: E:\Code\Java\cordova\MyCRMPritam\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+Package name: io.cordova.hellocordova
+LAUNCH SUCCESS
+
+E:\Code\Java\cordova\MyCRMPritam>
+
+E:\Code\Java\cordova\MyCRMPritam>cordova plugin add cordova-plugin-inappbrowser
+Installing "cordova-plugin-inappbrowser" for android
+Installing "cordova-plugin-inappbrowser" for browser
+Adding cordova-plugin-inappbrowser to package.json
+
+E:\Code\Java\cordova\MyCRMPritam>cordova plugin add cordova-plugin-safariviewcontroller
+Installing "cordova-plugin-safariviewcontroller" for android
+Subproject Path: CordovaLib
+Subproject Path: app
+Installing "cordova-plugin-safariviewcontroller" for browser
+Adding cordova-plugin-safariviewcontroller to package.json
+
+E:\Code\Java\cordova\MyCRMPritam>

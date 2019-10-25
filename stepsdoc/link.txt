@@ -1,1 +1,56 @@
 https://cordova.apache.org/docs/en/latest/guide/cli/index.html
+
+set PATH=%PATH%;E:\Software\AndroidStudio\gradle-5.6.2\bin;
+
+https://medium.com/@nacojohn/convert-your-angular-project-to-mobile-app-using-cordova-f0384a7711a6
+
+https://blog.angular.io/apps-that-work-natively-on-the-web-and-mobile-9b26852495e7
+
+https://www.thepolyglotdeveloper.com/2016/07/create-a-mobile-app-from-your-angular-2-web-app-with-nativescript/
+
+
+-------------------------------------------------------------------------------------------
+
+https://stackoverflow.com/questions/29391511/where-is-android-sdk-root-and-how-do-i-set-it
+
+https://cordova.apache.org/docs/en/9.x/guide/cli/index.html
+
+https://cordova.apache.org/docs/en/latest/
+
+https://stackoverflow.com/questions/48465730/fresh-cordova-build-from-angular2-build-white-screen-on-android
+
+
+https://medium.com/@EliaPalme/how-to-wrap-an-angular-app-with-apache-cordova-909024a25d79
+
+https://stackoverflow.com/questions/37270835/how-to-host-material-icons-offline
+
+https://cdnjs.com/libraries/font-awesome
+
+-------------------------------------------------------------------------------------------
+
+cordova create MyAPP
+
+cd MyAPP
+
+cordova platform add browser
+cordova run browser
+
+cordova platform add android
+cordova build android
+cordova run android
+
+cordova platform add ios
+cordova build ios
+cordova run ios
+
+cordova platform ls
+
+set PATH=%PATH%;E:\Software\AndroidStudio\gradle-5.6.2\bin;
+path
+
+cordova plugin add cordova-plugin-inappbrowser
+cordova plugin add cordova-plugin-safariviewcontroller
+cordova plugin add cordova-plugin-camera
+
+
+-------------------------------------------------------------------------------------------
